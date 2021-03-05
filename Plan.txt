@@ -1,0 +1,38 @@
+﻿HomePage -> Login
+                ->Sabrina -> 
+                    ->sabrina content(CRUD)
+                        ->OrderNow(button)
+                ->Pickup
+                    ->Pickup Content(CRUD)
+                        ->OrderNow(button)
+                ->Saputo
+                    ->Suputo Content(CRUD)
+                        ->OrderNow(button)
+                ->Butcher
+                    ->Butcher Content(CRUD)
+                        ->OrderNow(button)
+                ->Inter Canada
+                    ->Inter Canada(CRUD)
+                        ->OrderNow(button)
+
+All Pages(Sab, pic, sap, but, int){
+    OrderNow(button);
+
+    Table tab = new Table{
+        Unit(Dropdown, not null);
+        Need(Editable, not null);
+        OnHand(Editable, not null);
+        Products(Not Changable, not null)
+        Total = OnHand + Need;
+        Total(not null)
+    }
+    Save and Send(Submit Button);
+}
+
+Save and Send(){
+    Save to database;
+
+    **Email server needed**
+    Email Manager;
+    Email Vendor;
+}
